@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>表格标签</p>
+    <!--表格：
+        table：表格
+        tr：行
+        td：单元格
+        border：设置边框大小
+        th：特殊单元格
+        cellspacing：设置单元格和边框间的空隙
+        background:设置背景图片
+        bgcolor：设置背景颜色
+        rowspan:行合并
+        colspan：列合并-->
+    <table border="10px" cellspacing="0px" width="400px" >
+        <tr bgcolor="bisque">
+            <th>学号</th>
+            <th>姓名</th>
+            <th>年级</th>
+            <th>成绩</th>
+        </tr>
+    </table>
+    <p>内嵌框架标签</p>
+    <!--内嵌框架标签：在网页中嵌入一个网页并显示-->
+    <iframe src="http://www.baidu.com"; width="100px"; height=";500px"; ></iframe>
+    <P>表单标签</P>
+    <!--表单标签:name:表格提交时的名称
+                method:提交方式（get/post）
+                action:提交到的地址
+    -->
+    <form action="" method="get" name="myForm">
+        <!--type = text:文本信息框
+            password：密码框：效果录入信息不可见
+            radio：单选按钮
+            checkBox：多选按钮
+            file：文件
+            hidden：隐藏域
+            button：普通按钮
+            reset：特殊按钮（重置按钮将页面恢复到初始状态）
+            image：特殊按钮（图片按钮）
+            submit：提交-->
+        <input type="text" name="uname" placeholder="输入信息"/>
+        <input type="password" name="pwd"/>
+        <input type="radio" name="gender" value="0"/>女
+        <input type="file"/>
+        <input type="hidden" name="uname3" value="123"/>
+        <input type="button" value="普通按钮"/>
+        <input type="reset"/>
+        <img src="名称" width="30px">
+        <input type="image" width="20px"/>
+        <!--下拉列表：默认选中：selected
+            多选：multiple-->
+        <!--lable标签：增加属性-->
+    </form>
+</body>
+</html>
